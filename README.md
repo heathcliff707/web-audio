@@ -1,1 +1,1 @@
-Fast Link: https://heathcliff707.github.io/web-audio/
+Link: https://heathcliff707.github.io/web-audio/
