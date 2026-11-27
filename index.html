@@ -10,12 +10,18 @@
 </head>
 <body>
     <div class="container">
-        <h1>Secret Chill</h1>
+        <h1>🎧 Góc Nghe Truyện Chill</h1>
         
         <div class="main-grid">
             <!-- Khu vực 1: Trình phát truyện MP3 -->
             <section class="card">
-                <h2>1. Truyện Audio</h2>
+                <h2>1. Truyện Audio (MP3)</h2>
+                
+                <!-- Khung nhắc tiến độ lần trước -->
+                <div id="resume-banner" style="display: none; background: #2a2438; border-left: 4px solid #bb86fc; padding: 10px 12px; margin-bottom: 15px; border-radius: 6px; font-size: 0.9rem;">
+                    🕒 Lần trước nghe dở: <strong id="resume-info" style="color: #bb86fc;"></strong>
+                </div>
+
                 <div class="upload-box">
                     <label for="folder-upload" class="custom-file-upload">
                         📂 Chọn cả thư mục
@@ -49,7 +55,7 @@
 
             <!-- Khu vực 2: Nhạc nền YouTube -->
             <section class="card">
-                <h2>2. Nhạc Nền</h2>
+                <h2>2. Nhạc Nền (YouTube)</h2>
                 <div class="yt-input-group">
                     <input type="text" id="yt-url" placeholder="Dán link YouTube vào đây...">
                     <button id="load-yt-btn">Phát nhạc</button>
@@ -60,7 +66,7 @@
                 </div>
 
                 <div class="volume-control">
-                    <label for="yt-volume">Âm lượng: <span id="vol-value">30</span>%</label>
+                    <label for="yt-volume">Âm lượng nhạc nền: <span id="vol-value">30</span>%</label>
                     <input type="range" id="yt-volume" min="0" max="100" value="30">
                 </div>
             </section>
