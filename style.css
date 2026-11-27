@@ -176,3 +176,19 @@ audio {
     margin-top: 8px;
     accent-color: #03dac6;
 }
+
+.upload-box {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.secondary-btn {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.secondary-btn:hover {
+    background-color: #444;
+}

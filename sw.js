@@ -1,4 +1,4 @@
-const CACHE_NAME = 'truyen-audio-v1';
+const CACHE_NAME = 'truyen-audio-v2';
 const ASSETS = [
   './',
   './index.html',

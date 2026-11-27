@@ -10,15 +10,20 @@
 </head>
 <body>
     <div class="container">
-        <h1>Audio Web</h1>
+        <h1>Secret Chill</h1>
         
         <div class="main-grid">
             <!-- Khu vực 1: Trình phát truyện MP3 -->
             <section class="card">
                 <h2>1. Truyện Audio</h2>
                 <div class="upload-box">
-                    <label for="audio-upload" class="custom-file-upload">
-                        + Chọn file truyện (.mp3)
+                    <label for="folder-upload" class="custom-file-upload">
+                        📂 Chọn cả thư mục
+                    </label>
+                    <input type="file" id="folder-upload" webkitdirectory directory multiple>
+
+                    <label for="audio-upload" class="custom-file-upload secondary-btn">
+                        📄 Chọn nhiều file
                     </label>
                     <input type="file" id="audio-upload" accept="audio/*" multiple>
                 </div>
@@ -28,7 +33,7 @@
                     <audio id="story-player" controls></audio>
                     
                     <div class="speed-control">
-                        <label for="playback-speed">Tốc Độ:</label>
+                        <label for="playback-speed">Tốc độ đọc:</label>
                         <select id="playback-speed">
                             <option value="0.75">0.75x</option>
                             <option value="1" selected>1.0x (Chuẩn)</option>
@@ -44,7 +49,7 @@
 
             <!-- Khu vực 2: Nhạc nền YouTube -->
             <section class="card">
-                <h2>2. Chọn Nhạc</h2>
+                <h2>2. Nhạc Nền</h2>
                 <div class="yt-input-group">
                     <input type="text" id="yt-url" placeholder="Dán link YouTube vào đây...">
                     <button id="load-yt-btn">Phát nhạc</button>
@@ -55,7 +60,7 @@
                 </div>
 
                 <div class="volume-control">
-                    <label for="yt-volume">Âm Lượng: <span id="vol-value">30</span>%</label>
+                    <label for="yt-volume">Âm lượng: <span id="vol-value">30</span>%</label>
                     <input type="range" id="yt-volume" min="0" max="100" value="30">
                 </div>
             </section>
